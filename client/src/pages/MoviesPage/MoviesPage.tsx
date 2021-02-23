@@ -88,8 +88,8 @@ const useInfiniteScroll = ({
   loadMore: () => void;
   loaderElement?: HTMLElement | null;
 }) => {
-  React.useEffect(() => {
-    const observer = new IntersectionObserver(
+  const observerRef = useRef(
+    new IntersectionObserver(
       (entries) => {
         const firstEntry = entries[0];
 
@@ -98,7 +98,11 @@ const useInfiniteScroll = ({
         }
       },
       { threshold: 0.1 }
-    );
+    )
+  );
+
+  React.useEffect(() => {
+    const observer = observerRef.current;
 
     loaderElement && observer.observe(loaderElement);
 
