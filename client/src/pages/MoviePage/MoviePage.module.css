@@ -1,0 +1,49 @@
+.container {
+  margin: 25px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+ TODO: add hover styles
+*/
+.backButton {
+  align-self: flex-end;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 8px;
+  border: 1px solid gray;
+  color: black;
+  margin-bottom: 25px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  border-radius: 5px;
+}
+
+.info {
+  margin-left: 50px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.details {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 18px;
+}
+
+.description {
+  margin-top: 18px;
+}
+/*
+    Todo: use theme.css to defined colors and font sizes.
+*/
