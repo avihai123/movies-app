@@ -16,7 +16,7 @@ export type Movie = {
   download: string;
 };
 
-const baseUrl = "http://localhost:3000";
+const baseUrl = "http://localhost:3001";
 
 // Todo: add general network errors handling
 

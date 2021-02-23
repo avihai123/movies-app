@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "node server/server.js"
+    "start": "node server/server.js",
+    "start-client": "cd client && yarn start"
   },
   "repository": {
     "type": "git",

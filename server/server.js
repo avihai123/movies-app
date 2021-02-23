@@ -34,8 +34,8 @@ app.get("/movies/:id", (req, res) => {
   res.send(movies.filter((movie) => movie.id === req.params.id)[0]);
 });
 
-app.listen(3000, function () {
-  console.log(`app listening on port ${3000}!`);
+app.listen(3001, function () {
+  console.log(`app listening on port ${3001}!`);
 });
 
 module.exports = app;
