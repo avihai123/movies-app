@@ -1,0 +1,50 @@
+.container {
+  margin: auto 40px;
+}
+
+.moviesGrid {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.movieTitle {
+  margin-top: 7px;
+}
+
+.movieImage {
+  border-radius: 6px;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 25px 0;
+  background-color: #ffffff;
+}
+
+.searchInput {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 14px;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+/*
+ TODO: missing icons for search and for back button
+*/
